@@ -1,28 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://example.com/2024/10/10/dp%E5%AD%A6%E4%B9%A0%E8%BF%87%E7%A8%8B%E5%8F%8A%E8%AE%B0%E5%BD%95/</loc>
+    <lastmod>2024-10-10</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com/2024/05/28/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-4-%E5%89%8D%E7%BC%80%E5%92%8C-%E5%B7%AE%E5%88%86/</loc>
+    <lastmod>2024-10-10</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com/2024/07/16/CF1988A-Split-the-Multiset-%E9%A2%98%E8%A7%A3/</loc>
+    <lastmod>2024-10-10</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com/2024/07/16/CF1988C-Increasing-Sequence-with-Fixed-OR-%E9%A2%98%E8%A7%A3/</loc>
+    <lastmod>2024-10-10</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com/2024/05/19/Luogu-P1570-%E9%A2%98%E8%A7%A3/</loc>
+    <lastmod>2024-10-10</lastmod>
+  </url>
+  <url>
     <loc>http://example.com/2024/10/08/Luogu-P5686-%E9%A2%98%E8%A7%A3/</loc>
     <lastmod>2024-10-08</lastmod>
   </url>
   <url>
-    <loc>http://example.com/2024/07/16/CF1988C-Increasing-Sequence-with-Fixed-OR-%E9%A2%98%E8%A7%A3/</loc>
-    <lastmod>2024-07-16</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2024/07/16/CF1988A-Split-the-Multiset-%E9%A2%98%E8%A7%A3/</loc>
-    <lastmod>2024-07-16</lastmod>
-  </url>
-  <url>
     <loc>http://example.com/2024/07/16/CF1988B-Make-Majority-%E9%A2%98%E8%A7%A3/</loc>
     <lastmod>2024-07-16</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2024/05/28/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-4-%E5%89%8D%E7%BC%80%E5%92%8C-%E5%B7%AE%E5%88%86/</loc>
-    <lastmod>2024-07-12</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2024/05/19/LuoguP1570%E9%A2%98%E8%A7%A3/</loc>
-    <lastmod>2024-05-29</lastmod>
   </url>
   <url>
     <loc>http://example.com/2024/03/25/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-3-%E4%BA%8C%E5%88%86/</loc>
@@ -42,10 +46,6 @@
   </url>
   <url>
     <loc>http://example.com/2023/06/07/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-1-%E9%80%92%E5%BD%92%E5%8F%8A%E9%80%92%E6%8E%A8/</loc>
-    <lastmod>2023-12-10</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2023/04/16/%E5%8E%86%E5%8F%B2%E6%8F%90%E7%BA%B2%E5%90%88%E9%9B%86/</loc>
     <lastmod>2023-12-10</lastmod>
   </url>
   <url>
