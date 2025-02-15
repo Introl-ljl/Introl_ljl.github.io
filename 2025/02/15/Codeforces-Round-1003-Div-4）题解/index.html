@@ -23,25 +23,29 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Mist","darkmode":"auto","version":"8.16.0","exturl":false,"sidebar":{"position":"left","width":300,"display":"always","padding":18,"offset":12},"copycode":{"enable":"ture","style":"flat"},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="Introl&#39;s blog">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Introl&#39;s blog">
-<meta property="og:url" content="http://example.com/index.html">
+    <meta name="description" content="Codeforces Round 1003 (Div. 4)题解A字符串水题 Code1234567891011121314151617181920212223242526272829303132333435363738#pragma GCC optimize(1, 2, 3, &quot;Ofast&quot;, &quot;inline&quot;)#include &lt;bits&#x2F;stdc">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Codeforces Round 1003 (Div. 4）题解">
+<meta property="og:url" content="http://example.com/2025/02/15/Codeforces-Round-1003-Div-4%EF%BC%89%E9%A2%98%E8%A7%A3/index.html">
 <meta property="og:site_name" content="Introl&#39;s blog">
-<meta property="og:description" content="Introl&#39;s blog">
+<meta property="og:description" content="Codeforces Round 1003 (Div. 4)题解A字符串水题 Code1234567891011121314151617181920212223242526272829303132333435363738#pragma GCC optimize(1, 2, 3, &quot;Ofast&quot;, &quot;inline&quot;)#include &lt;bits&#x2F;stdc">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2025-02-15T06:48:36.000Z">
+<meta property="article:modified_time" content="2025-02-15T07:17:44.408Z">
 <meta property="article:author" content="Introl">
+<meta property="article:tag" content="CF">
+<meta property="article:tag" content="题解">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/">
+<link rel="canonical" href="http://example.com/2025/02/15/Codeforces-Round-1003-Div-4%EF%BC%89%E9%A2%98%E8%A7%A3/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2025/02/15/Codeforces-Round-1003-Div-4%EF%BC%89%E9%A2%98%E8%A7%A3/","path":"2025/02/15/Codeforces-Round-1003-Div-4）题解/","title":"Codeforces Round 1003 (Div. 4）题解"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Introl's blog</title>
+<title>Codeforces Round 1003 (Div. 4）题解 | Introl's blog</title>
   
 
 
@@ -74,7 +78,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">Introl's blog</h1>
+      <p class="site-title">Introl's blog</p>
       <i class="logo-line"></i>
     </a>
       <p class="site-subtitle" itemprop="description">Stay Hungry, Stay Foolish</p>
@@ -116,7 +120,7 @@
 </meting-js>
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -129,6 +133,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Codeforces-Round-1003-Div-4-%E9%A2%98%E8%A7%A3"><span class="nav-number">1.</span> <span class="nav-text">Codeforces Round 1003 (Div. 4)题解</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#A"><span class="nav-number">1.1.</span> <span class="nav-text">A</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Code"><span class="nav-number">1.1.1.</span> <span class="nav-text">Code</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#B"><span class="nav-number">1.2.</span> <span class="nav-text">B</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A2%98%E6%84%8F%E7%AE%80%E8%BF%B0"><span class="nav-number">1.2.1.</span> <span class="nav-text">题意简述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A2%98%E7%9B%AE%E5%88%86%E6%9E%90"><span class="nav-number">1.2.2.</span> <span class="nav-text">题目分析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Code-1"><span class="nav-number">1.2.3.</span> <span class="nav-text">Code</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#C1-x2F-C2"><span class="nav-number">1.3.</span> <span class="nav-text">C1&#x2F;C2</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A2%98%E6%84%8F%E7%AE%80%E8%BF%B0-1"><span class="nav-number">1.3.1.</span> <span class="nav-text">题意简述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A2%98%E7%9B%AE%E5%88%86%E6%9E%90-1"><span class="nav-number">1.3.2.</span> <span class="nav-text">题目分析</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#C1"><span class="nav-number">1.3.2.1.</span> <span class="nav-text">C1</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#C2"><span class="nav-number">1.3.2.2.</span> <span class="nav-text">C2</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Code-2"><span class="nav-number">1.3.3.</span> <span class="nav-text">Code</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#C1-1"><span class="nav-number">1.3.3.1.</span> <span class="nav-text">C1</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#C2-1"><span class="nav-number">1.3.3.2.</span> <span class="nav-text">C2</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#D"><span class="nav-number">1.4.</span> <span class="nav-text">D</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -211,16 +216,17 @@
 
     </div>
 
-    <div class="main-inner index posts-expand">
+    <div class="main-inner post posts-expand">
 
-    
+
+  
 
 
 <div class="post-block">
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2025/02/15/Codeforces-Round-1003-Div-4%EF%BC%89%E9%A2%98%E8%A7%A3/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -234,13 +240,13 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Introl's blog">
+      <meta itemprop="name" content="Codeforces Round 1003 (Div. 4）题解 | Introl's blog">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2025/02/15/Codeforces-Round-1003-Div-4%EF%BC%89%E9%A2%98%E8%A7%A3/" class="post-title-link" itemprop="url">Codeforces Round 1003 (Div. 4）题解</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          Codeforces Round 1003 (Div. 4）题解
+        </h1>
 
         <div class="post-meta-container">
           <div class="post-meta">
@@ -264,6 +270,13 @@
     </span>
 
   
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
 </div>
 
         </div>
@@ -272,8 +285,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="Codeforces-Round-1003-Div-4-题解"><a href="#Codeforces-Round-1003-Div-4-题解" class="headerlink" title="Codeforces Round 1003 (Div. 4)题解"></a>Codeforces Round 1003 (Div. 4)题解</h1><h2 id="A"><a href="#A" class="headerlink" title="A"></a>A</h2><p>字符串水题</p>
+    <div class="post-body" itemprop="articleBody"><h1 id="Codeforces-Round-1003-Div-4-题解"><a href="#Codeforces-Round-1003-Div-4-题解" class="headerlink" title="Codeforces Round 1003 (Div. 4)题解"></a>Codeforces Round 1003 (Div. 4)题解</h1><h2 id="A"><a href="#A" class="headerlink" title="A"></a>A</h2><p>字符串水题</p>
 <h3 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">pragma</span> GCC optimize(1, 2, 3, <span class="string">&quot;Ofast&quot;</span>, <span class="string">&quot;inline&quot;</span>)</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ll long long</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> int ll</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ONLINE_JUDGE</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> MULTI_CASES</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> endl <span class="string">&#x27;\n&#x27;</span></span></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> MaxN = <span class="number">2e5</span>+<span class="number">100</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> INF = <span class="number">1e9</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> mod=<span class="number">212370440130137957ll</span>;</span><br><span class="line"><span class="type">int</span> T=<span class="number">1</span>, N, M;</span><br><span class="line"><span class="type">int</span> a[MaxN];</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">Solve</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	string s;</span><br><span class="line">    cin&gt;&gt;s;</span><br><span class="line">    s.<span class="built_in">erase</span>(s.<span class="built_in">size</span>()<span class="number">-2</span>,<span class="number">2</span>);</span><br><span class="line">    cout&lt;&lt;s&lt;&lt;<span class="string">&quot;i&quot;</span>&lt;&lt;endl;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">signed</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="meta">#<span class="keyword">ifndef</span> ONLINE_JUDGE</span></span><br><span class="line">    <span class="built_in">freopen</span>(<span class="string">&quot;.in&quot;</span>, <span class="string">&quot;r&quot;</span>, stdin);</span><br><span class="line">    <span class="built_in">freopen</span>(<span class="string">&quot;.out&quot;</span>, <span class="string">&quot;w&quot;</span>, stdout);</span><br><span class="line"><span class="meta">#<span class="keyword">endif</span></span></span><br><span class="line">    ios::<span class="built_in">sync_with_stdio</span>(<span class="number">0</span>);</span><br><span class="line">    cin.<span class="built_in">tie</span>(<span class="number">0</span>),cout.<span class="built_in">tie</span>(<span class="number">0</span>);</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">ifdef</span> MULTI_CASES</span></span><br><span class="line">    cin &gt;&gt; T;</span><br><span class="line">    <span class="keyword">while</span> (T--)</span><br><span class="line"><span class="meta">#<span class="keyword">endif</span></span></span><br><span class="line">       <span class="built_in">Solve</span>();</span><br><span class="line">    <span class="comment">//fclose(stdin);</span></span><br><span class="line">    <span class="comment">//fclose(stdout);</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="B"><a href="#B" class="headerlink" title="B"></a>B</h2><h3 id="题意简述"><a href="#题意简述" class="headerlink" title="题意简述"></a>题意简述</h3><p>给定一个字符串 $s$，每次操作，可以选择一个索引 $i（1\le i\le \lvert s \rvert-1）$，且 $s_i&#x3D;s_{i+1}$，然后将这两个字符更改为任意一个字母。求多次操作后可以达到的最小长度。</p>
 <h3 id="题目分析"><a href="#题目分析" class="headerlink" title="题目分析"></a>题目分析</h3><p>不难发现，只要字符串中存在 $s_i&#x3D;s_{i+1}$，就可以重复删除字符并更改为相邻字符。最后的长度一定为 $1$。</p>
@@ -290,7 +302,6 @@
 <h3 id="Code-2"><a href="#Code-2" class="headerlink" title="Code"></a>Code</h3><h4 id="C1-1"><a href="#C1-1" class="headerlink" title="C1"></a>C1</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">pragma</span> GCC optimize(1, 2, 3, <span class="string">&quot;Ofast&quot;</span>, <span class="string">&quot;inline&quot;</span>)</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ll long long</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> int ll</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ONLINE_JUDGE</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> MULTI_CASES</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> endl <span class="string">&#x27;\n&#x27;</span></span></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> MaxN = <span class="number">2e5</span>+<span class="number">100</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> INF = <span class="number">1e9</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> mod=<span class="number">212370440130137957ll</span>;</span><br><span class="line"><span class="type">int</span> T=<span class="number">1</span>, N, M;</span><br><span class="line"><span class="type">int</span> a[MaxN];</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">Solve</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	cin&gt;&gt;N&gt;&gt;M;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=N;i++)&#123;</span><br><span class="line">        cin&gt;&gt;a[i];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">int</span> cnt;</span><br><span class="line">    cin&gt;&gt;cnt;</span><br><span class="line">    <span class="type">int</span> las=-INF;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=N;i++)&#123;</span><br><span class="line">        <span class="type">int</span> x=cnt-a[i];</span><br><span class="line">        <span class="keyword">if</span>(x&lt;=a[i])&#123;</span><br><span class="line">            <span class="keyword">if</span>(x&gt;=las)&#123;</span><br><span class="line">                las=x;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span>&#123;</span><br><span class="line">                <span class="keyword">if</span>(a[i]&gt;=las)&#123;</span><br><span class="line">                    las=a[i];</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">else</span>&#123;</span><br><span class="line">                    <span class="built_in">puts</span>(<span class="string">&quot;NO&quot;</span>);</span><br><span class="line">                    <span class="keyword">return</span> ;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span>&#123;</span><br><span class="line">            <span class="keyword">if</span>(a[i]&gt;=las)&#123;</span><br><span class="line">                las=a[i];</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span>&#123;</span><br><span class="line">                <span class="keyword">if</span>(x&gt;=las)&#123;</span><br><span class="line">                    las=x;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">else</span>&#123;</span><br><span class="line">                    <span class="built_in">puts</span>(<span class="string">&quot;NO&quot;</span>);</span><br><span class="line">                    <span class="keyword">return</span> ;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">puts</span>(<span class="string">&quot;YES&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">signed</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="meta">#<span class="keyword">ifndef</span> ONLINE_JUDGE</span></span><br><span class="line">    <span class="built_in">freopen</span>(<span class="string">&quot;.in&quot;</span>, <span class="string">&quot;r&quot;</span>, stdin);</span><br><span class="line">    <span class="built_in">freopen</span>(<span class="string">&quot;.out&quot;</span>, <span class="string">&quot;w&quot;</span>, stdout);</span><br><span class="line"><span class="meta">#<span class="keyword">endif</span></span></span><br><span class="line">    ios::<span class="built_in">sync_with_stdio</span>(<span class="number">0</span>);</span><br><span class="line">    cin.<span class="built_in">tie</span>(<span class="number">0</span>),cout.<span class="built_in">tie</span>(<span class="number">0</span>);</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">ifdef</span> MULTI_CASES</span></span><br><span class="line">    cin &gt;&gt; T;</span><br><span class="line">    <span class="keyword">while</span> (T--)</span><br><span class="line"><span class="meta">#<span class="keyword">endif</span></span></span><br><span class="line">       <span class="built_in">Solve</span>();</span><br><span class="line">    <span class="comment">//fclose(stdin);</span></span><br><span class="line">    <span class="comment">//fclose(stdout);</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h4 id="C2-1"><a href="#C2-1" class="headerlink" title="C2"></a>C2</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">pragma</span> GCC optimize(1, 2, 3, <span class="string">&quot;Ofast&quot;</span>, <span class="string">&quot;inline&quot;</span>)</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ll long long</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> int ll</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ONLINE_JUDGE</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> MULTI_CASES</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> endl <span class="string">&#x27;\n&#x27;</span></span></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> MaxN = <span class="number">2e5</span> + <span class="number">100</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> INF = <span class="number">1e9</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> mod = <span class="number">212370440130137957ll</span>;</span><br><span class="line"><span class="type">int</span> T = <span class="number">1</span>, N, M;</span><br><span class="line"><span class="type">int</span> a[MaxN];</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">Solve</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    cin &gt;&gt; N &gt;&gt; M;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= N; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        cin &gt;&gt; a[i];</span><br><span class="line">    &#125;</span><br><span class="line">    vector&lt;<span class="type">int</span>&gt; b;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= M; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="type">int</span> x;</span><br><span class="line">        cin &gt;&gt; x;</span><br><span class="line">        b.<span class="built_in">push_back</span>(x);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">sort</span>(b.<span class="built_in">begin</span>(), b.<span class="built_in">end</span>());</span><br><span class="line">    <span class="type">int</span> las = a[<span class="number">1</span>];</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; M; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        las = <span class="built_in">min</span>(las, b[i] - a[<span class="number">1</span>]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// cerr&lt;&lt;las&lt;&lt;endl;</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">2</span>; i &lt;= N; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="type">int</span> minn = INF;</span><br><span class="line">        <span class="keyword">if</span> (a[i] &gt;= las)</span><br><span class="line">        &#123;</span><br><span class="line">            minn = a[i];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">auto</span> x = <span class="built_in">lower_bound</span>(b.<span class="built_in">begin</span>(), b.<span class="built_in">end</span>(), a[i] + las);</span><br><span class="line">        <span class="keyword">if</span> (x == b.<span class="built_in">end</span>())</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span> (minn == INF)</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="built_in">puts</span>(<span class="string">&quot;NO&quot;</span>);</span><br><span class="line">                <span class="keyword">return</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span></span><br><span class="line">            &#123;</span><br><span class="line">                las = minn;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="type">int</span> cnt = x - b.<span class="built_in">begin</span>();</span><br><span class="line">            las = <span class="built_in">min</span>(minn, b[cnt] - a[i]);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// cerr&lt;&lt;las&lt;&lt;&quot; &quot;;</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">puts</span>(<span class="string">&quot;YES&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">signed</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="meta">#<span class="keyword">ifndef</span> ONLINE_JUDGE</span></span><br><span class="line">    <span class="built_in">freopen</span>(<span class="string">&quot;.in&quot;</span>, <span class="string">&quot;r&quot;</span>, stdin);</span><br><span class="line">    <span class="built_in">freopen</span>(<span class="string">&quot;.out&quot;</span>, <span class="string">&quot;w&quot;</span>, stdout);</span><br><span class="line"><span class="meta">#<span class="keyword">endif</span></span></span><br><span class="line">    ios::<span class="built_in">sync_with_stdio</span>(<span class="number">0</span>);</span><br><span class="line">    cin.<span class="built_in">tie</span>(<span class="number">0</span>), cout.<span class="built_in">tie</span>(<span class="number">0</span>);</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">ifdef</span> MULTI_CASES</span></span><br><span class="line">    cin &gt;&gt; T;</span><br><span class="line">    <span class="keyword">while</span> (T--)</span><br><span class="line"><span class="meta">#<span class="keyword">endif</span></span></span><br><span class="line">        <span class="built_in">Solve</span>();</span><br><span class="line">    <span class="comment">// fclose(stdin);</span></span><br><span class="line">    <span class="comment">// fclose(stdout);</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="D"><a href="#D" class="headerlink" title="D"></a>D</h2>
-      
     </div>
 
     
@@ -298,272 +309,22 @@
     
 
     <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
+          <div class="post-tags">
+              <a href="/tags/CF/" rel="tag"><i class="fa fa-tag"></i> CF</a>
+              <a href="/tags/%E9%A2%98%E8%A7%A3/" rel="tag"><i class="fa fa-tag"></i> 题解</a>
+          </div>
 
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/11/25/11-25-NOIP-%E6%A8%A1%E6%8B%9F%E8%B5%9B-%E9%A2%98%E8%A7%A3/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Introl">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Introl's blog">
-      <meta itemprop="description" content="Introl's blog">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Introl's blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/11/25/11-25-NOIP-%E6%A8%A1%E6%8B%9F%E8%B5%9B-%E9%A2%98%E8%A7%A3/" class="post-title-link" itemprop="url">11.25-NOIP-模拟赛-题解</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2024-11-25 09:46:20" itemprop="dateCreated datePublished" datetime="2024-11-25T09:46:20+08:00">2024-11-25</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-11-28 17:47:51" itemprop="dateModified" datetime="2024-11-28T17:47:51+08:00">2024-11-28</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/11-25NOIP%E6%A8%A1%E6%8B%9F%E8%B5%9B%E7%AE%80%E8%A6%81%E9%A2%98%E8%A7%A3/" itemprop="url" rel="index"><span itemprop="name">11.25NOIP模拟赛简要题解</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          11.25-NOIP模拟赛题解。
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2024/11/25/11-25-NOIP-%E6%A8%A1%E6%8B%9F%E8%B5%9B-%E9%A2%98%E8%A7%A3/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
-    </div>
 
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/10/21/CF2023B-CF2024D-Skipping-%E9%A2%98%E8%A7%A3/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Introl">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Introl's blog">
-      <meta itemprop="description" content="Introl's blog">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Introl's blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/10/21/CF2023B-CF2024D-Skipping-%E9%A2%98%E8%A7%A3/" class="post-title-link" itemprop="url">CF2023B/CF2024D-Skipping-题解</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2024-10-21 09:47:28 / 修改时间：09:59:30" itemprop="dateCreated datePublished" datetime="2024-10-21T09:47:28+08:00">2024-10-21</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/CF%E9%A2%98%E8%A7%A3%E7%B3%BB%E5%88%97/" itemprop="url" rel="index"><span itemprop="name">CF题解系列</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          首先我们可以发现，在第 $i$ 个点上时，所得的得分为从 $1$ 到 $i$ 之和减去跳过的问题。所以此题可以转化为求跳过的题目的最小值。所以答案
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2024/10/21/CF2023B-CF2024D-Skipping-%E9%A2%98%E8%A7%A3/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2024/11/25/11-25-NOIP-%E6%A8%A1%E6%8B%9F%E8%B5%9B-%E9%A2%98%E8%A7%A3/" rel="prev" title="11.25-NOIP-模拟赛-题解">
+                  <i class="fa fa-chevron-left"></i> 11.25-NOIP-模拟赛-题解
+                </a>
             </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/10/21/CF2024C-Concatenation-of-Arrays-%E9%A2%98%E8%A7%A3/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Introl">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Introl's blog">
-      <meta itemprop="description" content="Introl's blog">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Introl's blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/10/21/CF2024C-Concatenation-of-Arrays-%E9%A2%98%E8%A7%A3/" class="post-title-link" itemprop="url">CF2024C-Concatenation--of-Arrays-题解</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2024-10-21 08:04:07 / 修改时间：10:42:26" itemprop="dateCreated datePublished" datetime="2024-10-21T08:04:07+08:00">2024-10-21</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/CF%E9%A2%98%E8%A7%A3%E7%B3%BB%E5%88%97/" itemprop="url" rel="index"><span itemprop="name">CF题解系列</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          给定 $n$ 个二维数组，每个数组的长度为 $2$，将这 $n$ 个数组连接起来，要使得数组中的逆序对数量尽可能的少。
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2024/10/21/CF2024C-Concatenation-of-Arrays-%E9%A2%98%E8%A7%A3/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
+            <div class="post-nav-item">
             </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
+          </div>
     </footer>
   </article>
 </div>
@@ -571,534 +332,7 @@
 
 
 
-    
 
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/10/21/CF2024B-Buying-Lemonade-%E9%A2%98%E8%A7%A3/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Introl">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Introl's blog">
-      <meta itemprop="description" content="Introl's blog">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Introl's blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/10/21/CF2024B-Buying-Lemonade-%E9%A2%98%E8%A7%A3/" class="post-title-link" itemprop="url">CF2024B-Buying-Lemonade-题解</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2024-10-21 07:08:26 / 修改时间：10:04:40" itemprop="dateCreated datePublished" datetime="2024-10-21T07:08:26+08:00">2024-10-21</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/CF%E9%A2%98%E8%A7%A3%E7%B3%BB%E5%88%97/" itemprop="url" rel="index"><span itemprop="name">CF题解系列</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          给定 $n$ 个按钮，每个按钮对应 $a_i$ 瓶柠檬水，你不清楚哪个按钮对应哪个 $a_i$，按下按钮后，如果有柠檬水就会掉落一瓶，反之则没有任何东西。求至少按多少次按钮可以保证至少收到 $k$ 瓶柠檬水。
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2024/10/21/CF2024B-Buying-Lemonade-%E9%A2%98%E8%A7%A3/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/10/21/CF2024A-Profitable-Interest-Rate-%E9%A2%98%E8%A7%A3/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Introl">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Introl's blog">
-      <meta itemprop="description" content="Introl's blog">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Introl's blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/10/21/CF2024A-Profitable-Interest-Rate-%E9%A2%98%E8%A7%A3/" class="post-title-link" itemprop="url">CF2024A-Profitable-Interest-Rate-题解</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2024-10-21 06:54:22 / 修改时间：07:08:44" itemprop="dateCreated datePublished" datetime="2024-10-21T06:54:22+08:00">2024-10-21</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/CF%E9%A2%98%E8%A7%A3%E7%B3%BB%E5%88%97/" itemprop="url" rel="index"><span itemprop="name">CF题解系列</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          Alice有 $a$ 枚硬币，她想要将硬币存入银行，但是开立存款的最低金额为 $b$，如果金额不足，可以花费 $x$ 个硬币使得存款的最低金额减少
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2024/10/21/CF2024A-Profitable-Interest-Rate-%E9%A2%98%E8%A7%A3/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/10/10/dp%E5%AD%A6%E4%B9%A0%E8%BF%87%E7%A8%8B%E5%8F%8A%E8%AE%B0%E5%BD%95/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Introl">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Introl's blog">
-      <meta itemprop="description" content="Introl's blog">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Introl's blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/10/10/dp%E5%AD%A6%E4%B9%A0%E8%BF%87%E7%A8%8B%E5%8F%8A%E8%AE%B0%E5%BD%95/" class="post-title-link" itemprop="url">dp学习过程及记录</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2024-10-10 19:12:18" itemprop="dateCreated datePublished" datetime="2024-10-10T19:12:18+08:00">2024-10-10</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-11-25 09:45:36" itemprop="dateModified" datetime="2024-11-25T09:45:36+08:00">2024-11-25</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/OI%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">OI学习笔记</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          在dp学习过程中的一些理解及总结，长期更新。
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2024/10/10/dp%E5%AD%A6%E4%B9%A0%E8%BF%87%E7%A8%8B%E5%8F%8A%E8%AE%B0%E5%BD%95/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/10/08/Luogu-P5686-%E9%A2%98%E8%A7%A3/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Introl">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Introl's blog">
-      <meta itemprop="description" content="Introl's blog">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Introl's blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/10/08/Luogu-P5686-%E9%A2%98%E8%A7%A3/" class="post-title-link" itemprop="url">Luogu-P5686-题解</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2024-10-08 10:18:07 / 修改时间：10:33:22" itemprop="dateCreated datePublished" datetime="2024-10-08T10:18:07+08:00">2024-10-08</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          P5686题目解析
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2024/10/08/Luogu-P5686-%E9%A2%98%E8%A7%A3/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/07/16/CF1988C-Increasing-Sequence-with-Fixed-OR-%E9%A2%98%E8%A7%A3/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Introl">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Introl's blog">
-      <meta itemprop="description" content="Introl's blog">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Introl's blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/07/16/CF1988C-Increasing-Sequence-with-Fixed-OR-%E9%A2%98%E8%A7%A3/" class="post-title-link" itemprop="url">CF1988C Increasing Sequence with Fixed OR 题解</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2024-07-16 10:49:42" itemprop="dateCreated datePublished" datetime="2024-07-16T10:49:42+08:00">2024-07-16</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-10-10 19:10:01" itemprop="dateModified" datetime="2024-10-10T19:10:01+08:00">2024-10-10</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/CF%E9%A2%98%E8%A7%A3%E7%B3%BB%E5%88%97/" itemprop="url" rel="index"><span itemprop="name">CF题解系列</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          通过观察此数据，可以发现，构造出的数字的二进制存在规律，即将 $n$ 从末位开始将每个 $1$ 都去除一次，这样可以使得相邻两个数的异或值都为 $n$。
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2024/07/16/CF1988C-Increasing-Sequence-with-Fixed-OR-%E9%A2%98%E8%A7%A3/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/07/16/CF1988A-Split-the-Multiset-%E9%A2%98%E8%A7%A3/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Introl">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Introl's blog">
-      <meta itemprop="description" content="Introl's blog">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Introl's blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/07/16/CF1988A-Split-the-Multiset-%E9%A2%98%E8%A7%A3/" class="post-title-link" itemprop="url">CF1988A-Split the Multiset 题解</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2024-07-16 10:34:49" itemprop="dateCreated datePublished" datetime="2024-07-16T10:34:49+08:00">2024-07-16</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-10-10 19:10:21" itemprop="dateModified" datetime="2024-10-10T19:10:21+08:00">2024-10-10</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/CF%E9%A2%98%E8%A7%A3%E7%B3%BB%E5%88%97/" itemprop="url" rel="index"><span itemprop="name">CF题解系列</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          给定一个正整数 $n$，每次可以将其拆分成 $k$ 个数，求将 $n$ 变为 $n$ 个 $1$ 的最少操作次数。
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2024/07/16/CF1988A-Split-the-Multiset-%E9%A2%98%E8%A7%A3/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" title="下一页" aria-label="下一页" href="/page/2/"><i class="fa fa-angle-right"></i></a>
-  </nav>
 
 </div>
   </main>
